@@ -1,0 +1,214 @@
+@forward "media";
+
+body{
+   margin: 0;
+   padding: 0;
+   
+}
+main{
+    display:grid;
+    grid-template-columns: 25% 75%;
+    width: 100%;
+}
+.salama_left{
+    background: rgb(31, 100, 79);
+    height: 120vh;
+    header{
+        background-color: yellow;
+        top:0;
+        height: 60px;
+        width:100%;
+    }
+    .titre{
+        display: flex;
+        justify-content:space-evenly;
+        padding: 5px;
+        border: 1px solid yellow;
+        width:90%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: -20px;
+        background: rgb(31, 100, 79);
+
+        .img_logo{
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin: 10px;
+        }
+        h1{
+            color: white;
+            span{
+                color: yellow;
+            }
+        }
+        
+    }
+    .buttons{
+        margin-top: 50px;
+        display: grid;
+        gap: 20px;
+        
+        .monprofil,.dashboard{
+            margin-left: auto;
+            margin-right: auto;
+            width: 90%;
+            padding: 10px;
+            border:1px solid yellow;
+            box-shadow: 0px 3px 0px 0px yellow;
+            border-radius: 5px;
+            background: rgb(31, 100, 79);
+            color: white;
+            &:hover{
+                width: 90%;
+                margin-left: auto;
+                margin-right: auto;
+                padding: 10px;
+                background: yellow;
+                border: yellow;
+                border-radius: 5px;
+                color:  rgb(31, 100, 79);
+            }
+            
+        }
+
+    }
+}
+// -----------------------------------second section-------------------------------
+.salama_right{
+    background:rgb(242, 240, 240);
+    height:120vh;
+    header{
+        nav{
+            margin: 10px;
+            display: flex;
+            justify-content: flex-end;
+            gap:10px;
+           
+            img{
+                width: 50px;
+                height: 50px;
+                border-radius: 50%;
+                object-fit: cover;     
+        }
+         }
+        }
+        .titre{
+            background: rgb(202, 232, 244);
+            h2{
+                margin: 10px;
+                padding: 5px;
+            }
+            
+        }
+}
+.identinte{
+    background:white;
+    width: 50%;
+    height: 480px;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0px 0px 1px 1px rgba(0, 0, 0, 0.118);
+    margin-top: 50px;
+    
+    .profil_nav{
+        
+        
+        margin-left: auto;
+        margin-right: auto;
+        width:80%;
+        display:flex;
+        gap: 10px;
+        text-align:left;
+       nav{
+        text-align: justify;
+        margin-top: 50px;
+       }
+        p{
+            color: gray;
+        }
+        img{
+            width: 100px;
+            height: 100px;
+            object-fit: cover;
+            border-radius: 5px;
+            margin-top: 25px;
+            
+        }
+    }
+}
+.modifier{
+    width:80%;
+    margin-left: auto;
+    margin-right: auto;
+   
+}
+.email_nav,.password_nav,.newpassword_nav{
+    width: 80%;
+    text-align: justify;
+    margin-left: auto;
+    margin-right: auto;
+    
+    input{
+        width:80%;
+        padding: 5px;
+        background-color: rgb(167, 167, 167);
+        border: none;
+        border-radius: 5px;
+       
+    }
+}
+.submit{
+    display: flex;
+    gap: 10px;
+    #submit{
+        background:rgb(31, 100, 79);
+        color: white;
+        width: 50%;
+    }
+}
+// -----------------------------------menu-----------------------------------
+#icon_menu{
+    margin-top: auto;
+    margin-bottom: auto;
+    display:none;
+    
+}
+.menu{
+    position: absolute;
+    right: 4%;
+    background: rgb(31, 100, 79);
+    display: grid;
+    width: 200px;
+    transition: 1s;
+    button{
+        width: 80%;
+        margin: 10px auto;
+    }
+    .monprofil_menu,.dashboard_menu{
+        margin-left: auto;
+        margin-right: auto;
+        width: 90%;
+        padding: 10px;
+        border:1px solid yellow;
+        box-shadow: 0px 3px 0px 0px yellow;
+        border-radius: 5px;
+        background: rgb(31, 100, 79);
+        color: white;
+            &:hover{
+                width: 90%;
+                margin-left: auto;
+                margin-right: auto;
+                padding: 10px;
+                background: yellow;
+                border: yellow;
+                border-radius: 5px;
+                color:  rgb(31, 100, 79); 
+            }    
+    }
+}
+.menuone{
+    position: absolute;
+margin-left: -400px;
+}

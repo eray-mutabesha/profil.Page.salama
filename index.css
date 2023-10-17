@@ -1,0 +1,264 @@
+@media (max-width: 655px) {
+  html body main {
+    display: grid;
+    grid-template-columns: auto;
+  }
+  html body main .salama_left {
+    background: white;
+    height: -moz-fit-content;
+    height: fit-content;
+  }
+  html body main .salama_left .buttons {
+    display: none;
+  }
+  html body main .salama_left #icon_menu {
+    display: block;
+  }
+  html body .salama_right {
+    background: rgb(242, 240, 240);
+    height: 120vh;
+  }
+  html body .salama_right header {
+    display: none;
+  }
+  html body .salama_right .titre {
+    display: none;
+  }
+  html body .identinte {
+    background: white;
+    width: 90%;
+    height: 480px;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0px 0px 1px 1px rgba(0, 0, 0, 0.118);
+    margin-top: 50px;
+  }
+  html body .identinte .profil_nav {
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    display: flex;
+    gap: 10px;
+    text-align: left;
+  }
+  html body .identinte .profil_nav nav {
+    text-align: justify;
+    margin-top: 50px;
+  }
+  html body .identinte .profil_nav p {
+    color: gray;
+  }
+  html body .identinte .profil_nav img {
+    width: 100px;
+    height: 100px;
+    -o-object-fit: cover;
+       object-fit: cover;
+    border-radius: 5px;
+    margin-top: 25px;
+  }
+}
+body {
+  margin: 0;
+  padding: 0;
+}
+
+main {
+  display: grid;
+  grid-template-columns: 25% 75%;
+  width: 100%;
+}
+
+.salama_left {
+  background: rgb(31, 100, 79);
+  height: 120vh;
+}
+.salama_left header {
+  background-color: yellow;
+  top: 0;
+  height: 60px;
+  width: 100%;
+}
+.salama_left .titre {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 5px;
+  border: 1px solid yellow;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: -20px;
+  background: rgb(31, 100, 79);
+}
+.salama_left .titre .img_logo {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  margin: 10px;
+}
+.salama_left .titre h1 {
+  color: white;
+}
+.salama_left .titre h1 span {
+  color: yellow;
+}
+.salama_left .buttons {
+  margin-top: 50px;
+  display: grid;
+  gap: 20px;
+}
+.salama_left .buttons .monprofil, .salama_left .buttons .dashboard {
+  margin-left: auto;
+  margin-right: auto;
+  width: 90%;
+  padding: 10px;
+  border: 1px solid yellow;
+  box-shadow: 0px 3px 0px 0px yellow;
+  border-radius: 5px;
+  background: rgb(31, 100, 79);
+  color: white;
+}
+.salama_left .buttons .monprofil:hover, .salama_left .buttons .dashboard:hover {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 10px;
+  background: yellow;
+  border: yellow;
+  border-radius: 5px;
+  color: rgb(31, 100, 79);
+}
+
+.salama_right {
+  background: rgb(242, 240, 240);
+  height: 120vh;
+}
+.salama_right header nav {
+  margin: 10px;
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+}
+.salama_right header nav img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.salama_right .titre {
+  background: rgb(202, 232, 244);
+}
+.salama_right .titre h2 {
+  margin: 10px;
+  padding: 5px;
+}
+
+.identinte {
+  background: white;
+  width: 50%;
+  height: 480px;
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: 0px 0px 1px 1px rgba(0, 0, 0, 0.118);
+  margin-top: 50px;
+}
+.identinte .profil_nav {
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+  display: flex;
+  gap: 10px;
+  text-align: left;
+}
+.identinte .profil_nav nav {
+  text-align: justify;
+  margin-top: 50px;
+}
+.identinte .profil_nav p {
+  color: gray;
+}
+.identinte .profil_nav img {
+  width: 100px;
+  height: 100px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 5px;
+  margin-top: 25px;
+}
+
+.modifier {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.email_nav, .password_nav, .newpassword_nav {
+  width: 80%;
+  text-align: justify;
+  margin-left: auto;
+  margin-right: auto;
+}
+.email_nav input, .password_nav input, .newpassword_nav input {
+  width: 80%;
+  padding: 5px;
+  background-color: rgb(167, 167, 167);
+  border: none;
+  border-radius: 5px;
+}
+
+.submit {
+  display: flex;
+  gap: 10px;
+}
+.submit #submit {
+  background: rgb(31, 100, 79);
+  color: white;
+  width: 50%;
+}
+
+#icon_menu {
+  margin-top: auto;
+  margin-bottom: auto;
+  display: none;
+}
+
+.menu {
+  position: absolute;
+  right: 4%;
+  background: rgb(31, 100, 79);
+  display: grid;
+  width: 200px;
+  transition: 1s;
+}
+.menu button {
+  width: 80%;
+  margin: 10px auto;
+}
+.menu .monprofil_menu, .menu .dashboard_menu {
+  margin-left: auto;
+  margin-right: auto;
+  width: 90%;
+  padding: 10px;
+  border: 1px solid yellow;
+  box-shadow: 0px 3px 0px 0px yellow;
+  border-radius: 5px;
+  background: rgb(31, 100, 79);
+  color: white;
+}
+.menu .monprofil_menu:hover, .menu .dashboard_menu:hover {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 10px;
+  background: yellow;
+  border: yellow;
+  border-radius: 5px;
+  color: rgb(31, 100, 79);
+}
+
+.menuone {
+  position: absolute;
+  margin-left: -400px;
+}/*# sourceMappingURL=index.css.map */
